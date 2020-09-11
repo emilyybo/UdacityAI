@@ -1,4 +1,4 @@
-from utils import *
+from Sudoku.utils import *
 import copy
 
 row_units = [cross(r, cols) for r in rows]
@@ -231,7 +231,7 @@ if __name__ == "__main__":
     display(result)
 
     try:
-        import PySudoku
+        from Sudoku import PySudoku
 
         PySudoku.play(grid2values(diag_sudoku_grid), result, history)
 
